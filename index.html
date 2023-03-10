@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jamilthon's Liquor Store">
+    <meta name="keywords" content="Jamilthon's Liquor Store, bar">
+    <meta name="author" content="Jamilthon's Liquor Store"/>
+    <meta name="copyright" content="Copyright © Jamilthon's Liquor Store - Diseñado y Desarrollado por Kevin Sánchez"/>
+    <meta property="og:locale" content="Ica - Perú">
+    <meta property="og:title" content="Jamilthon's Liquor Store">
+    <meta property="og:description" content="Jamilthon's Liquor Store">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index"/>
+    <title>Jamilthon's</title>
+    <link rel="icon" href="assets/img/logo3.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/70656af24f.js" crossorigin="anonymous"></script> 
+    <script src="assets/js/jquery-latest.js"></script>
+</head>
+<body>
+    <nav class="menu">
+        <div class="container center">
+            <div class="part-a">
+                <i onclick="mostrarMenu();" class="fa fa-bars"></i>
+            </div>
+            <div class="part-b">
+                <a href=""><img src="assets/img/logo2.png" alt=""></a>
+            </div>
+            <div class="box center">
+                <div id="menu" class="part-c center">
+                    <ul class="center">
+                        <i onclick="cerrarMenu();" class="fa fa-close"></i>
+                        <li><a href="">Cervezas</a></li>
+                        <li><a href="">Vinos</a></li>
+                        <li><a href="">Licores</a></li>
+                        <li><a href="">Combos</a></li>
+                        <div class="center">
+                            <input type="search">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </ul>
+                </div>
+                <div class="part-d center">
+                    <i onclick="mostrarSearch();" class="fa fa-search"></i>
+                    <a href="" class="fa fa-shopping-cart"><span>0</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="space-menu"></div>
+    <section id="search" class="search center">
+        <form action="terminal" method="post" autocomplete="off">
+            <i onclick="cerrarSearch();" class="fa fa-close"></i>
+            <input class="input-text" name="PalabraClave" id="inlineFormInput" type="text" placeholder="Nombre del producto" required>
+            <input name="buscar" type="hidden" class="form-control mb-2" id="inlineFormInput" value="v">
+            <button class="boton" type="submit">Buscar</button>
+        </form>
+    </section>
+    <h1 class="title">cervezas</h1>
+    <section class="container products">
+        <div class="item">
+            <img src="assets/img/01-botella.png" alt="">
+            <p class="center">-15%</p>
+            <h1>Phaseilus Cursus Velit</h1>
+            <h2><span>Botella</span> <span>300 ml</span></h2>
+            <h4>S/7.50</h4>
+            <h3>S/7.00</h3>
+        </div>
+    </section>
+    <section class="container promotions">
+        <div class="promo center a">
+            <div class="part-a center">
+                <h2>Explora</h2>
+                <h1>Whiskeys Exclusivos</h1>
+                <h3>Llévate tu vaso Jamilthonero</h3>
+                <a class="boton" href="">Ver todo</a>
+            </div>
+            <div class="part-b center">
+                <img src="assets/img/0006.png" alt="">
+            </div>
+        </div>
+        <div class="promo center b">
+            <div class="part-a center">
+                <h2>Disfruta</h2>
+                <h1>Cervezas Heladas</h1>
+                <h3>¡Celebra con tus patas!</h3>
+                <a class="boton" href="">Ver todo</a>
+            </div>
+            <div class="part-b center">
+                <img src="assets/img/0005.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="public"></section>
+    <span class="ir-arriba"><i class="fa fa-angle-up"></i></span>
+    <footer>
+        <section class="container">
+            <div class="box">
+                <div class="colum">
+                    <a href="index"><img src="assets/img/logo2.png" alt=""></a>
+                    <p>Venta y Servicio Delivery de licores nacionales e internacionales. Recibe tus combos en la comodidad de tu hogar o en tu point preferido.</p>
+                    <div class="social">
+                        <a href="" class="fa fa-facebook"></a>
+                        <a href="" class="fa fa-whatsapp"></a>
+                        <a href="" class="fa fa-twitter"></a>
+                        <a href="" class="fa fa-instagram"></a>
+                        <a href="" class="fa fa-phone-alt"></a>
+                    </div>
+                </div>
+                <div class="colum">
+                    <h1>Nuestros Productos</h1>
+                    <ul>
+                        <li><a href="">Cervezas</a></li>
+                        <li><a href="">Vinos</a></li>
+                        <li><a href="">Licores</a></li>
+                        <li><a href="">Ofertas</a></li>
+                        <li><a href="">Novedades</a></li>
+                    </ul>
+                </div>
+                <div class="colum">
+                    <h1>Horario de Atención</h1>
+                    <ul>
+                        <li><a>Martes a Domingo de <br> 6:00 pm a 4:00 pm</a></li>
+                    </ul>
+                </div>
+                <div class="colum">
+                    <h1>Contacto</h1>
+                    <ul>
+                        <li><a href="">Calle Sta. Teresa 105, Sunampe</a></li>
+                        <li><a href="">971584771</a></li>
+                        <li><a href="">contacto@jamilthons.com</a></li>
+                        <li><a href="">Delivery</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy center">
+                <div class="part-a">
+                    <p>© Diseñado y Desarrollado por <a href="index">Kevin Sánchez</a></p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+<script src="assets/js/btnup.js"></script>
+<script src="assets/js/menu.js"></script>
+</html>
